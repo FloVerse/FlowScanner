@@ -99,7 +99,7 @@ docker run -it vulnscanner
 ## Exemple de rapport
 À la fin de l’analyse, un fichier rapport.html sera généré automatiquement et ouvert dans votre navigateur.
 
-###Le rapport contient :
+### Le rapport contient :
 
 - Toutes les pages explorées
 - Vulnérabilités détectées (SQL Injection, XSS, Headers manquants, CSRF, fichiers exposés, directory listing)
