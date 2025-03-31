@@ -48,3 +48,32 @@ pip install -r requirements.txt
 3. Lancement du scanner
 python main.py
 
+### Utilisation avec Docker
+
+1. Construis l’image Docker :
+
+docker build -t vulnscanner .
+
+2. Lance le scanner :
+
+docker run -it vulnscanner
+
+📄 Exemple de rapport
+
+À la fin de l’analyse, un fichier rapport.html sera généré automatiquement et ouvert dans votre navigateur.
+
+Le rapport contient :
+
+    Toutes les pages explorées
+
+    Vulnérabilités détectées (SQL Injection, XSS, Headers manquants, CSRF, fichiers exposés, directory listing)
+
+    Résumé clair et structuré des risques identifiés
+
+
+🎯 Prochaines évolutions
+
+✅ Ajout d’un système de scoring
+✅ Export du rapport en PDF
+✅ Interface CLI avancée
+✅ Dashboard web (Flask)
