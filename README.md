@@ -22,8 +22,10 @@ FlowScanner est un outil d’analyse de sécurité web développé en **Python**
 ## 📂 Structure du projet
 
 vulnscanner/
-├── main.py                  # Lancement du scanner
+main.py                  # Lancement du scanner
+
 ├── logger.py                # Système de logs
+
 ├── scanner/                 # Modules de scan
 │   ├── crawler.py
 │   ├── sql_injection.py
@@ -55,15 +57,16 @@ vulnscanner/
 ```bash
 git clone https://github.com/ton_pseudo/vulnscanner.git
 cd vulnscanner
-
+```
 2. Création d'un environnement virtuel et installation des dépendances :
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate   # Sur Windows : .venv\Scripts\activate
 pip install -r requirements.txt
-
+```
 3. Lancement du scanner
 ```bash
 python main.py
+```
 
